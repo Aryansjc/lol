@@ -1,10 +1,14 @@
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --dark-color: #2c3e50;
-    --light-color: #ecf0f1;
+    --primary-color: #6c5ce7;
+    --secondary-color: #00b894;
+    --dark-color: #121212;
+    --darker-color: #0a0a0a;
+    --light-color: #2d2d2d;
+    --text-color: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --accent-color: #00cec9;
     --danger-color: #e74c3c;
-    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -16,8 +20,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: var(--light-color);
-    color: var(--dark-color);
+    background-color: var(--dark-color);
+    color: var(--text-color);
 }
 
 .container {
@@ -28,7 +32,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 header {
@@ -55,7 +59,7 @@ main {
 }
 
 section {
-    background-color: white;
+    background-color: var(--light-color);
     border-radius: 8px;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -63,9 +67,9 @@ section {
 }
 
 h2 {
-    color: var(--primary-color);
+    color: var(--accent-color);
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--light-color);
+    border-bottom: 2px solid var(--darker-color);
     padding-bottom: 0.5rem;
 }
 
@@ -79,7 +83,7 @@ h2 {
 .step {
     flex: 1;
     min-width: 250px;
-    background-color: var(--light-color);
+    background-color: var(--darker-color);
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
@@ -114,20 +118,20 @@ h2 {
 }
 
 .code-block {
-    background-color: #f8f9fa;
+    background-color: var(--darker-color);
     border-radius: 6px;
     margin-bottom: 1.5rem;
     overflow: hidden;
-    border: 1px solid #ddd;
+    border: 1px solid #444;
 }
 
 .code-header {
-    background-color: #eaecef;
+    background-color: #333;
     padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #444;
 }
 
 .copy-btn {
@@ -142,7 +146,7 @@ h2 {
 }
 
 .copy-btn:hover {
-    background-color: #2980b9;
+    background-color: #5045c9;
 }
 
 pre {
@@ -155,6 +159,7 @@ code {
     font-family: 'Consolas', 'Monaco', monospace;
     font-size: 0.9rem;
     line-height: 1.4;
+    color: #ddd;
 }
 
 .rules-list, .after-submit-list {
@@ -169,7 +174,7 @@ code {
     display: inline-block;
     margin-top: 0.5rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .email-link:hover {
@@ -177,8 +182,8 @@ code {
 }
 
 footer {
-    background-color: var(--dark-color);
-    color: white;
+    background-color: var(--darker-color);
+    color: var(--text-muted);
     text-align: center;
     padding: 1.5rem 0;
 }
